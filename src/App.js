@@ -3,7 +3,7 @@ import './App.css';
 import Course from './Course';
 
 function getRandomCourse() {
-  const courseArray = ['Angular', 'Bootstrap', 'Ccsharp', 'KompleWeb'];
+  const courseArray = ['Angular', 'Bootstrap', 'Ccsharp', 'Kompleweb'];
   return courseArray[Math.floor(Math.random() * courseArray.length)]
 }
 
@@ -17,8 +17,8 @@ function App() {
   });
   return (
     <div className="App">
-      <button onClick={handleClick}>Kurs Ekle</button>
-      <div>
+      <button className='appButton' onClick={handleClick}>Kurs Ekle</button>
+      <div className='courseList'>
         {courseList}
       </div>
     </div>
